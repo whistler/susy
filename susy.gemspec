@@ -18,18 +18,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.15"
   s.summary = "Responsive grids for Compass."
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<compass>, [">= 0.12.2.rc.0"])
-      s.add_runtime_dependency(%q<sass>, [">= 3.2.0.alpha.237"])
-    else
-      s.add_dependency(%q<compass>, [">= 0.12.2.rc.0"])
-      s.add_dependency(%q<sass>, [">= 3.2.0.alpha.237"])
-    end
-  else
-    s.add_dependency(%q<compass>, [">= 0.12.2.rc.0"])
-    s.add_dependency(%q<sass>, [">= 3.2.0.alpha.237"])
-  end
+  s.add_dependency(%q<compass>, [">= 0.12"])
+  s.add_dependency(%q<sass>, [">= 3.1"])
 end
